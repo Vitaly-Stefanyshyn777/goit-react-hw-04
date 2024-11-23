@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import styles from './ImageModal.module.css';
 
 const ImageModal = ({ isOpen, onClose, imageData }) => {
-  Modal.setAppElement('#root');
+  // Modal.setAppElement('#root');
 
   const customStyles = {
     overlay: {
@@ -39,6 +39,7 @@ const ImageModal = ({ isOpen, onClose, imageData }) => {
           className={styles.modalImage}
           src={imageData.url}
           alt={imageData.name || 'Image'}
+          loading="lazy"
         />
       </div>
     </Modal>

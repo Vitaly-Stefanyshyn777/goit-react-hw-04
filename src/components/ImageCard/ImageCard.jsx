@@ -18,6 +18,7 @@ const ImageCard = ({ imageData, onOpenModal }) => {
           onClick={handleClick}
           src={urls.small}
           alt={description}
+          loading="lazy"
         />
       </div>
       <div className={styles.likesContainer}>
