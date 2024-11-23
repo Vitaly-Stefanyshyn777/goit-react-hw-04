@@ -1,0 +1,147 @@
+/* .searchWrap {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: burlywood;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.searchForm {
+  position: relative;
+  width: 400px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 10px 10px 90px; 
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.searchBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px 0 0 4px;
+} */
+
+/* 
+.searchHeader {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.searchForm {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.searchButton {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: #2980b9;
+} */
+
+/* SearchBar.module.css */
+.searchHeader {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.searchForm {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #007bff;
+}
+
+.searchButton {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: 2px solid #007bff;
+  border-left: none;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+
+.searchButton:focus {
+  outline: none;
+}
+
+/* Декоративна іконка в полі введення */
+.searchForm::before {
+  content: '🔍';
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+  .searchForm {
+    flex-direction: column;
+  }
+
+  .searchInput,
+  .searchButton {
+    border-radius: 50px;
+  }
+
+  .searchButton {
+    margin-top: 0.5rem;
+    border-left: 2px solid #007bff;
+  }
+}
